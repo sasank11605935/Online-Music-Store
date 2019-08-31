@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Login In</title>
+    <link rel="stylesheet" type="text/css" href="loginstyle.css">
+    <script>
+        function f1()
+        {
+            var a=0;
+            if(document.getElementById("user").value=="" || document.getElementById("pwd").value=="")
+            {
+                window.alert("please enter the data.");
+                a=1;
+                return false;
+            }
+            if(document.getElementById("user").value==document.getElementById("pwd").value && a==0)   
+             window.location="index.html";
+            else
+              window.alert("Input credentials are wrong. Please enter again.");
+        }
+    </script>
+</head>
+<body>
+   <div id="main">
+       <h1>Login</h1>
+    <form>
+        <input type="text" name="username" placeholder="James123" id="user"><br>
+        <input type="password" name="pwd" placeholder="********"
+        id="pwd"><br>
+        <input type="button" id="bt-login" value="Enter ME!" onclick="f1()">
+    </form> 
+   </div>
+</body>
+</html>

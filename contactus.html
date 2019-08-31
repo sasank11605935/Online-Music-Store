@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="contactstyle.css">
+        
+        <script type="text/javascript">
+            function f1()
+            {
+                window.alert("Thank you for contacting us. We will be back soon.");
+            }
+            function redirect()
+            {
+                window.location="index.html";
+            }
+        </script>
+    </head>
+<body>
+    <div id="glob_content">
+        <div id="title">Contact Us</div>
+    <div id="form_content">
+        <form>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="phone" placeholder="Phone">
+            <textarea name="message" placeholder="Message"></textarea>
+            <input type="submit" name="submit" value="send" onclick=f1()>
+            <input type="button" value="Back to Home" name="home" onclick="redirect();" >
+        </form>
+    </div>
+    </div>
+</body>

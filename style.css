@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+  background-image: url(wrapper.jpg);
+  background-size: cover;
+  }
+#logo{
+    top: 15px;
+    left: 15px;
+    color: aliceblue;
+    height: 65px;
+    position: relative;
+    margin-left: 0px;
+}
+#Online{
+    position: absolute;
+    color: rgb(350,40,40);
+    font-family: comic sans ms;
+    font-size: 60px;
+    font-weight: 600;
+    text-shadow: 1px 1px 10px ;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+#musicstore{
+    color: rgb(20,220,220);
+    font-weight: bolder;
+    position: absolute;
+    font-family: verdana;
+    font-size: 40px;
+    margin-left: 125px;
+    margin-top: 15px;
+    text-decoration-style: dotted;
+    text-shadow: 0px 0px 5px ; 
+}
+
+#header{
+    margin-top: 80px;
+    margin: 5px;
+    margin-top: 28px;
+    padding: 5px;
+    align-content: center;
+    line-height: 35px;
+    color:aliceblue;
+    height: 40px;
+    background-color: rgba(20,20,20,0.8);
+    border-radius: 16px;
+    box-shadow: 1px 1px 0px grey;
+
+}
+#header ul{
+    list-style: none;
+    margin-left: 920px;
+}
+#header>#nav>ul li{
+    width: 100px;
+    text-align: center;
+    height: 35px;
+    line-height: 36px;
+    float: left;
+    margin-top: 2.5px;
+    opacity: 0.8;
+}
+#header #nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+}
+#header #nav ul li a:hover,focus{
+    background-color: #36383d;
+    color: rgba(20,220,220,1);
+    font-family: cursive
+}
+#sidebar{
+    position: absolute;
+    height: 600px;
+    width: 300px;
+    float: left;
+    background-color: rgba(20,220,220,0.2);
+    border-radius: 25px;
+    top: 160px;
+}
+#main{
+    position: absolute;
+    float: left;
+    background-color:rgb(350,40,40);
+    margin-left: 320px;
+    height: 600px;
+    top: 160px;
+}
+#sidebar ul{
+    margin-top: 80px;
+}
+#sidebar ul li a{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: verdana;
+    font-size: 20px;
+    border-radius: 25px;
+    height: 40px;
+    padding: 10px;
+}
+#sidebar ul li a:hover, focus{
+    font-family: cursive;
+    background-color: rgb(20,220,220);
+}
+#sidebar ul li ul li{
+    display: none;
+}
+#sidebar ul li:hover ul li{
+    display: block;
+}
+#maintext{
+    color: orangered;
+    font-family: cursive;
+    background-color: azure;
+    position: absolute;
+    top: 500px;
+    width: 100%;
+}

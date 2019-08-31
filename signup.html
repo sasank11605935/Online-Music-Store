@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>SignUp</title>
+    <link rel="stylesheet" type="text/css" href="signupstyle.css">
+    
+    <script type="text/javascript">
+        function validate()
+      {
+      
+         if( document.getElementById("t1").value== "" )
+         {
+            alert( "Please provide your name!" );
+            return false;
+         }
+         
+         if( document.getElementById("t2").value == "" )
+         {
+            alert( "Please provide your Email!" );
+            return false;
+         }
+         
+         if( document.getElementById("t3").value == "")
+         {
+            alert( "Please provide passowrd." );
+            return false;
+         }
+         
+         if( document.getElementById("t3").value != document.getElementById("t4").value )
+         {
+            alert( "Please enter password correctly!" );
+            return false;
+         }
+          window.alert("You are successfully signedup.");
+         return( true );
+          
+      }
+        function redirect()
+            {
+                window.location="index.html";
+            }
+          
+    </script>
+</head>
+<body>
+    <div id="glob_content">
+        <div id="title">Sign Up Form</div>
+    <div id="form_content">    
+    <form>
+        <input type="text" placeholder="Firstname" id="t1"><br>
+        <input type="text" placeholder="Lastname" id="t1"><br>
+        <input type="email" placeholder="Email" id="t2"><br>
+        <input type="password" name="password" placeholder="password" id="t3"><br>
+        <input type="password" name="conpassword" placeholder="Re-enter password" id="t4"><br>
+        
+          Gender
+            <input type="radio" id="male" name="gender">Male<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" id="female" name="gender">Female<br>
+        
+        
+        <input type="submit" name="submit" onclick="validate()">  
+        <input type="button" name="home" value="Home" onclick="redirect()"> 
+    </form>
+    </div>
+    </div>
+</body>
+</html>
